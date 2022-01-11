@@ -1,0 +1,79 @@
+.featured {
+  height: 100vh;
+}
+
+.featured--vertical {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featured--horizontal {
+  width: inherit;
+  height: inherit;
+  background: linear-gradient(to right, #111 25%, transparent 50%);
+}
+
+.featured--name {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.featured--info {
+  font-size: 18px;
+
+  margin-top: 15px;
+}
+
+.featured--points {
+  color: #46d369;
+  font-weight: bold;
+}
+
+.featured--year,
+.featured--points,
+.featured--seasons {
+  display: inline-block;
+  margin: 0 0 0 15px;
+  font-weight: bold;
+}
+
+.featured--description {
+  margin: 15px 5px;
+  font-size: 20px;
+  color: rgb(196, 196, 196);
+  width: 50%;
+}
+
+.botao--assistir,
+.botao--lista {
+  display: inline-block;
+  font-size: 20px;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px;
+  transition: 0.2s;
+}
+
+.botao--assistir:hover,
+.botao--lista:hover {
+  opacity: 0.7;
+}
+
+.botao--assistir {
+  background-color: #fff;
+  color: #000;
+}
+
+.botao--lista {
+  background-color: #333;
+  color: #fff;
+}
+
+.featured--genres {
+  margin-top: 15px;
+  color: rgb(196, 196, 196);
+  font-size: 18px;
+}
