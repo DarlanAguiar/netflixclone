@@ -5,7 +5,16 @@ import "./FeatureMovie.css";
 
 const FeatureMovie = ({ item }) => {
   //pegandpo a data do item
-  const data = new Date(item.first_air_date);
+  let data = ""
+
+  if(item.first_air_date){
+    data = new Date(item.first_air_date);
+  }else if(item.release_date){
+    data = new Date(item.release_date) 
+  }
+  
+
+  console.log(item)
 
   //pegado os generos (precisa de array pois é mais de um);
   let genero = [];
@@ -27,7 +36,7 @@ const FeatureMovie = ({ item }) => {
       {/* estas duas divs servem para fazer o degradê escuro no css */}
       <div className="featured--vertical">
         <div className="featured--horizontal">
-          <div className="featured--name">{item.name}</div>
+          <div className="featured--name">{item.name ? item.name : item.title}</div>
           <div className="featured--info">
             <div className="featured--points">{item.vote_average} Pontos</div>
             <div className="featured--year">
