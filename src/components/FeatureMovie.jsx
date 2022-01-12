@@ -4,7 +4,7 @@ import {BsPlus, BsPlayFill} from "react-icons/bs"
 import "./FeatureMovie.css";
 
 const FeatureMovie = ({ item }) => {
-  console.log(item);
+  
   //pegandpo a data do item
   const data = new Date(item.first_air_date);
 
