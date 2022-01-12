@@ -53,19 +53,33 @@ const App = () => {
     window.addEventListener("scroll", capturaScroll);
   }, []);
 
+  const changeTheme = (tema) => {
+    setFeatureData(tema);
+  };
+
   return (
     <div className="page">
       <Header black={blackHeader} />
       {FeatureData && <FeatureMovie item={FeatureData} />}
       <section className="list">
         {movieList.map((item, key) => (
-          <MovieRow key={key} title={item.title} items={item.items} />
+          <MovieRow
+            key={key}
+            title={item.title}
+            items={item.items}
+            handleClickTheme={changeTheme}
+          />
         ))}
       </section>
       <Footer />
-      {movieList.length <= 0 && <div className="loading">
-          <img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" alt="loading netflix" />
-      </div>}
+      {movieList.length <= 0 && (
+        <div className="loading">
+          <img
+            src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif"
+            alt="loading netflix"
+          />
+        </div>
+      )}
     </div>
   );
 };

@@ -83,7 +83,6 @@ export default {
   },
   getmovieInfo: async (movieid, type) => {
     let info = {};
-    
 
     if (movieid) {
       switch (type) {
@@ -101,8 +100,7 @@ export default {
           info = null;
           break;
       }
-      return info
-
+      return info;
     }
   },
 };

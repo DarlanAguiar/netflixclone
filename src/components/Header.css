@@ -1,4 +1,4 @@
-header{
+header {
   position: fixed;
   z-index: 999;
   top: 0;
@@ -12,25 +12,23 @@ header{
   transition: 1s;
 }
 
-.black{
+.black {
   background-color: #141414;
 }
 
-.header--logo{
+.header--logo {
   height: 40px;
 }
 
-.header--logo img{
+.header--logo img {
   height: 100%;
 }
 
-.header--user{
+.header--user {
   height: 50px;
 }
 
-.header--user img{
+.header--user img {
   height: 40px;
   border-radius: 3px;
 }
-
-
