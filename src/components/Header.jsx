@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Logo from "../img/Netflix-Logo.png";
+import logoUser from "../img/logo_usuario.png"
 import "./Header.css"
 
 
@@ -14,7 +15,7 @@ const Header = ({black}) => {
       </div>
       <div className='header--user'>
         <a href='/'>
-          <img src='https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png' alt='imagem usuario'/>
+          <img src={logoUser} alt='imagem usuario'/>
         </a>
       </div>
     </header>
