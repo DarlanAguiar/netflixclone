@@ -52,10 +52,10 @@ const FeatureMovie = ({ item }) => {
             </div>
             <div className="featured--description">{item.overview}</div>
             <div className="feature--buttons">
-              <a className="botao--assistir" href={`/watch/${item.id}`}>
+              <a className="botao--assistir" href={`#`}>
                 <BsPlayFill /> Assistir
               </a>
-              <a className="botao--lista" href={`/list/${item.id}`}>
+              <a className="botao--lista" href={`#`}>
                 <BsPlus /> Minha Lista{" "}
               </a>
             </div>
