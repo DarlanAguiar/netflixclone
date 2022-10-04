@@ -19,8 +19,8 @@ const basicFatch = async (endpoint) => {
   return json;
 };
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+
+const apis = {
   getHomeList: async () => {
     return [
       {
@@ -104,3 +104,5 @@ export default {
     }
   },
 };
+
+export default apis;
